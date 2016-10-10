@@ -43,7 +43,7 @@ namespace speech_to_text
 
             // split file into chunks based on silence detection with sox
             Console.WriteLine("Splitting audio file...");
-            var startInfo = new ProcessStartInfo("sox-14.4.2\\sox.exe",
+            var startInfo = new ProcessStartInfo(@"C:\Program Files (x86)\sox-14-4-2\sox.exe",
                 "soundtrack.wav split.wav silence 0 1 0.33 1% : newfile : restart");
             startInfo.UseShellExecute = false;
 
